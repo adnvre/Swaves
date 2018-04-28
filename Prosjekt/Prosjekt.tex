@@ -1,0 +1,64 @@
+
+\documentclass[norsk,a4paper,12pt]{article}
+\usepackage[T1]{fontenc} %for å bruke æøå
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} %for å inkludere grafikk
+\usepackage{verbatim} %for å inkludere filer med tegn LaTeX ikke liker
+\usepackage{mathpazo}
+\usepackage{listings}
+\bibliographystyle{plain}
+\usepackage{xcolor}
+
+\definecolor{background}{gray}{0.95}
+\definecolor{comment}{rgb}{0,0.5,0}
+\colorlet{keyword}{blue}
+\colorlet{string}{red}
+\lstset{numbers=left,
+	title=\lstname,
+	numberstyle=\tiny, 
+	breaklines=true,
+	tabsize=4,
+	language=Python,
+	morekeywords={with,super,as},,
+	frame=single,
+	basicstyle=\footnotesize\tt,
+	commentstyle=\color{comment},
+	keywordstyle=\color{keyword},
+	stringstyle=\color{string},
+	backgroundcolor=\color{background},
+	showstringspaces=false,
+	numbers=left,
+	numbersep=5pt,
+	literate=
+		{æ}{{\ae}}1
+		{å}{{\aa}}1
+		{ø}{{\o}}1
+		{Æ}{{\AE}}1
+		{Å}{{\AA}}1
+		{Ø}{{\O}}1
+	}
+
+
+
+\title{Tex mal}
+\author{Adnan Vrevic}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed massa urna. Fusce placerat, nulla id aliquam varius, nulla risus commodo metus, in fringilla velit massa eu odio. Aliquam vitae eros at orci volutpat pulvinar eu a sapien. Proin ullamcorper tincidunt orci vel vehicula. Vestibulum venenatis eget magna at pharetra. Aenean ut rutrum urna. Aliquam venenatis leo viverra, fermentum massa vel, maximus lectus. Pellentesque pulvinar sodales massa non venenatis. Praesent lobortis consequat erat ut semper. Nulla tincidunt ac enim sed imperdiet. Nulla maximus dui eget eros laoreet, vitae eleifend magna vulputate. Sed ut molestie neque. Sed sagittis sagittis metus. Fusce placerat enim ut augue ornare mattis.
+
+Integer non nunc tellus. Duis at est libero. Donec bibendum pharetra posuere. Fusce malesuada augue sed commodo dapibus. Nunc et enim est. Praesent nec ultrices mauris, a eleifend purus. Suspendisse vulputate malesuada hendrerit. Nullam luctus, diam lacinia volutpat lobortis, odio erat fringilla massa, cursus blandit ipsum mi nec lorem. Nam semper vitae dolor quis placerat. Nunc mauris ex, convallis eget lectus nec, porta tincidunt tortor. Sed dapibus ipsum facilisis viverra tempus. Nam id tellus elit. Sed lobortis augue vitae metus ornare, sit amet hendrerit nulla mattis. Pellentesque quis diam massa. Donec varius diam lectus, ac viverra urna ultrices id. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Pellentesque pulvinar sit amet lorem vitae rhoncus. Proin elit sem, rutrum eu mi vel, sodales iaculis turpis. Duis consequat sed magna sed facilisis. Donec vitae est aliquam, consequat arcu id, pharetra ex. Quisque in est lacinia, viverra odio vitae, venenatis sem. Donec leo sapien, luctus a suscipit eu, cursus et nulla. Ut diam ante, interdum ac suscipit ut, porta nec nisi. Morbi aliquam, nunc vitae interdum tempus, neque velit ornare augue, nec feugiat dui mi malesuada ante. 
+
+
+
+
+
+
+
+\end{document}
