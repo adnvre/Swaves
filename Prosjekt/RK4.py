@@ -1,11 +1,11 @@
 """
 The function for the Runge Kutta method
-"""
+
 
 def diffEQ(xNow,vNow,tNow,dt):
 	aNow = f(xNow,vNow,tNow)
 	return aNow
-
+"""
 # The Runge Kutta method
 def RK4(xStart,vStart,tStart,dt):
 	a1 = diffEQ(xStart,vStart,tStart)

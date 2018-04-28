@@ -1,6 +1,7 @@
 #imports
 import numpy as np
 import matplotlib.pyplot as plt
+from RK4 import *
 
 #declare constants
 dt = 10.**-2		#some shit timestep [s]
@@ -32,7 +33,7 @@ def f(x,v,t):
 def diffEQ(xNow,vNow,tNow):
 	aNow = f(xNow,vNow,tNow)
 	return aNow
-
+"""
 # The Runge Kutta method
 def RK4(xStart,vStart,tStart):
 	a1 = diffEQ(xStart,vStart,tStart)
@@ -63,11 +64,11 @@ def RK4(xStart,vStart,tStart):
 	vEnd = vStart + aMiddle*dt
 
 	return xEnd, vEnd
-
+"""
 #running the loop for shit
 for i in range(N-1):
 	x1 = x[i]; v1 =v[i]
-	x[i+1],v[i+1] = RK4(x1,v1,t)
+	x[i+1],v[i+1] = RK4(x1,v1,t,dt)
 	t[i+1] = t[i] + dt
 
 
