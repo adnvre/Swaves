@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.24)  28 APR 2018 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.24)  29 APR 2018 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -451,54 +451,61 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 51.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--66
+<Oppgave1.png, id=1, 462.528pt x 346.896pt>
+File: Oppgave1.png Graphic file (type png)
+ <use Oppgave1.png>
+Package pdftex.def Info: Oppgave1.png used on input line 57.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (72.52686pt too wide) in paragraph at lines 57--58
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--66
+Underfull \hbox (badness 10000) in paragraph at lines 53--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--66
+Underfull \hbox (badness 10000) in paragraph at lines 53--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--66
+Underfull \hbox (badness 10000) in paragraph at lines 53--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--66
+Underfull \hbox (badness 10000) in paragraph at lines 53--69
 
  []
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] (./Prosjekt.aux) ) 
+[2 <./Oppgave1.png>] [3] (./Prosjekt.aux) ) 
 Here is how much of TeX's memory you used:
- 3955 strings out of 493089
- 53280 string characters out of 6134842
+ 3961 strings out of 493089
+ 53363 string characters out of 6134842
  132847 words of memory out of 5000000
- 7382 multiletter control sequences out of 15000+600000
+ 7386 multiletter control sequences out of 15000+600000
  17570 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,40p,306b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Prosjekt.pdf (2 pages, 34611 bytes).
+ 38i,8n,40p,305b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/
+fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/urw
+/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palati
+no/uplr8a.pfb>
+Output written on Prosjekt.pdf (3 pages, 56449 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 26 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
