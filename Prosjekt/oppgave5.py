@@ -5,15 +5,15 @@ from RK4 import RK4
 import seaborn
 
 
-
 #declare constants
 dt = 10.**-2		#some timestep [s]
 m = 0.500			#mass of 500 g [kg]
 k = 1. 				#stiffness constant [N/m]
 x0 = 2. 			#start position [m]
 v0 = 0. 			#start velocity [m/s]
-T = 200. 			#total time [s]
+T = 100. 			#total time [s]
 N = int(T/dt) 		#number of things
+b = 0.1 			#[kg/s]
 omega0 = k/m 		#Svingefrekvens for HO
 F_D = 0.7 			#[N]
 omega_D = 13./(8*omega0)
@@ -30,13 +30,13 @@ F[0] = F_D
 
 """
 the function we have is 
-mx''(t) + kx(t) = F(t)
-x''(t) = F(t)/m -kx(t)/m
+mx''(t) +bx'(t) + kx(t) = F(t)
+x''(t) = (F(t) -bx'(t) -kx(t))/m
 """
 #making functions 
 
 def diffEQ(xNow,vNow,tNow):
-	aNow = (F[i]-k*xNow)/m
+	aNow = (F[i]-b*vNow-k*xNow)/m
 	return aNow
 
 #running the loop
@@ -63,7 +63,7 @@ plt.title('Plot i faserommet, $\omega_D = 13/(8\omega_0)$', fontsize=20)
 plt.xlabel("Motion in x [m]", fontsize=14)
 plt.ylabel("Velocity [m/s]", fontsize=14)
 plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
-#plt.savefig('Oppgave4del1.png')
+#plt.savefig('Oppgave5del1.png')
 plt.show()
 
 

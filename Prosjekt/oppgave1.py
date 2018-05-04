@@ -5,9 +5,8 @@ from RK4 import RK4
 import seaborn
 
 
-
 #declare constants
-dt = 10.**-2		#some shit timestep [s]
+dt = 10.**-2		#some timestep [s]
 m = 0.500		#mass of 500 g [kg]
 k = 1. 			#stiffness constant [N/m]
 x0 = 1. 			#start position [m]
@@ -24,13 +23,13 @@ the function we have is
 mx''(t) + kx(t) = 0
 x''(t) = kx(t)/m
 """
-#making functions for this bitch
+#making functions 
 
 def diffEQ(xNow,vNow,tNow):
 	aNow = -k*xNow/m
 	return aNow
 
-#running the loop for shit
+#running the loop 
 for i in range(N-1):
 	x1 = x[i]; v1 =v[i]
 	x[i+1],v[i+1] = RK4(diffEQ,x1,v1,t,dt)
@@ -38,13 +37,13 @@ for i in range(N-1):
 
 
 
-#plotting shit
+#plotting 
 
 """
 #plotting the motion in x against time
 plt.plot(t,x)
 plt.xlabel("time")
-plt.ylabel("utslag, whatever that is in english")
+plt.ylabel("motion")
 plt.show()
 """
 
@@ -54,7 +53,7 @@ plt.title('Plot i faserommet', fontsize=20)
 plt.xlabel("Motion in x [m]", fontsize=14)
 plt.ylabel("Velocity [m/s]", fontsize=14)
 plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
-plt.savefig('Oppgave1.png')
+#plt.savefig('Oppgave1.png')
 plt.show()
 
 

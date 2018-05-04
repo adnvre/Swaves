@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.24)  29 APR 2018 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.24)  4 MAY 2018 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,6 +331,14 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -341,34 +349,34 @@ LaTeX Warning: Unused global option(s):
 (./Prosjekt.aux)
 \openout1 = `Prosjekt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 47.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count96
+\scratchcounter=\count97
 \scratchdimen=\dimen109
-\scratchbox=\box28
-\nofMPsegments=\count97
-\nofMParguments=\count98
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count99
+\scratchbox=\box30
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count100
 \MPscratchDim=\dimen110
-\MPnumerator=\count100
-\makeMPintoPDFobject=\count101
-\everyMPtoPDFconversion=\toks21
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -418,94 +426,217 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \big@size=\dimen111
-\c@lstlisting=\count102
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 48.
+\c@lstlisting=\count103
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 49.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 48.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 49.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 48.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 49.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 48.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 49.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 48.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 49.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 51.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--61
+
+ []
 
 <Oppgave1.png, id=1, 462.528pt x 346.896pt>
 File: Oppgave1.png Graphic file (type png)
  <use Oppgave1.png>
-Package pdftex.def Info: Oppgave1.png used on input line 57.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+Package pdftex.def Info: Oppgave1.png used on input line 68.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
-Overfull \hbox (72.52686pt too wide) in paragraph at lines 57--58
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--69
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--69
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
 
  []
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2 <./Oppgave1.png>] [3] (./Prosjekt.aux) ) 
+Overfull \hbox (5.282pt too wide) in paragraph at lines 74--82
+[]\T1/ppl/m/n/12 Totalenergien viser et eller an-net, FINN UT AV HVA TO-TAL-EN-
+ERGIEN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+[2 <./Oppgave1.png>] <Oppgave2.png, id=14, 462.528pt x 346.896pt>
+File: Oppgave2.png Graphic file (type png)
+
+<use Oppgave2.png>
+Package pdftex.def Info: Oppgave2.png used on input line 98.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--108
+
+ []
+
+<Oppgave4del1.png, id=15, 462.528pt x 346.896pt>
+File: Oppgave4del1.png Graphic file (type png)
+ <use Oppgave4del1.png>
+Package pdftex.def Info: Oppgave4del1.png used on input line 115.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+[3 <./Oppgave2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
+
+ []
+
+[4 <./Oppgave4del1.png>] <Oppgave4del2.png, id=26, 462.528pt x 346.896pt>
+File: Oppgave4del2.png Graphic file (type png)
+
+<use Oppgave4del2.png>
+Package pdftex.def Info: Oppgave4del2.png used on input line 123.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
+
+<Oppgave5del1.png, id=27, 462.528pt x 346.896pt>
+File: Oppgave5del1.png Graphic file (type png)
+ <use Oppgave5del1.png>
+Package pdftex.def Info: Oppgave5del1.png used on input line 138.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--139
+
+ []
+
+[5 <./Oppgave4del2.png>] [6 <./Oppgave5del1.png>]
+<Oppgave5del2.png, id=36, 462.528pt x 346.896pt>
+File: Oppgave5del2.png Graphic file (type png)
+ <use Oppgave5del2.png>
+Package pdftex.def Info: Oppgave5del2.png used on input line 148.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--160
+
+ []
+
+[7 <./Oppgave5del2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 163--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 182.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) (./RK4.py
+[9]) (./oppgave1.py [10]) (./oppgave2.py [11]) (./oppgave4.py [12] [13])
+(./oppgave5.py [14]) (./oppgave6.py [15] [16]) [17] (./Prosjekt.aux) ) 
 Here is how much of TeX's memory you used:
- 3961 strings out of 493089
- 53363 string characters out of 6134842
- 132847 words of memory out of 5000000
- 7386 multiletter control sequences out of 15000+600000
- 17570 words of font info for 40 fonts, out of 8000000 for 9000
+ 4566 strings out of 493089
+ 59500 string characters out of 6134842
+ 321195 words of memory out of 5000000
+ 7953 multiletter control sequences out of 15000+600000
+ 27916 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,40p,305b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/
-fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/urw
-/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palati
-no/uplr8a.pfb>
-Output written on Prosjekt.pdf (3 pages, 56449 bytes).
+ 38i,8n,40p,864b,1765s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/loc
+al/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local
+/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/urw/palatino/uplri8a.pfb>
+Output written on Prosjekt.pdf (17 pages, 435658 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
