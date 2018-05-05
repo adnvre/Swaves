@@ -47,6 +47,12 @@ for i in range(N-1):
 	t[i+1] = t[i] + dt
 
 
+#The analytic solution
+
+def anal_x_solution(t):
+	return 2*np.cos(np.sqrt(k/m)*t) + F_D/(k-m*omega_D**2)*(np.cos(omega_D*t)-np.cos(np.sqrt(k/m)*t))
+
+
 #plotting
 
 #plotting the motion in x against time
@@ -67,3 +73,12 @@ plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
 plt.show()
 
 
+#plotting the difference between the numerical and analytical result
+
+plt.plot(t, x-anal_x_solution(t), '#803CA2', linewidth=2.0)
+plt.xlabel('t [s]', fontsize=14)
+plt.ylabel('Differanse utslag [m]',fontsize=14)
+plt.title('Differanse mellom analytisk og numerisk utslag', fontsize=16)
+plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
+#plt.savefig('Oppgave4_differanse.png')
+plt.show()
