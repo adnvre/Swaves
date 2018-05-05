@@ -29,7 +29,7 @@
 	stringstyle=\color{string},
 	backgroundcolor=\color{background},
 	showstringspaces=false,
-	numbers=left,
+	numbers=none,
 	numbersep=5pt,
 	literate=
 		{æ}{{\ae}}1
@@ -42,8 +42,8 @@
 
 
 
-\title{Prosjekt}
-\author{KANDIDATNUMMER}
+\title{Prosjektoppgave besvarelse}
+\author{15267}
 \date{\today}
 \begin{document}
 
@@ -51,9 +51,35 @@
 
 
 \section*{Oppgave 1}
-[ta med faseroms plott.]
+
+Ved å løse differensial likningen
 \\
+
+\begin{equation}
+	m\ddot{x}(t) + kx(t) =0,
+\end{equation}
+
+og plotte systemets bane i faserommet så får vi plottet i figur \ref{fig:plotoppg1}
 \\
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics[scale=0.8]{Oppgave1.png}
+	\caption{Figuren viser faseplottet for en fri harmonisk oscillator}
+	\label{fig:plotoppg1}
+	\end{center}
+\end{figure}
+
+Hvis vi varier initialverdiene for posisjonen og hastigheten, så vil det fortsatt være en ellipse. Hvis vi ser på totalenergien til systemet så ser vi hvorfor dette stemmer. Totalenergien er 
+
+\begin{align*}
+	E_{tot} =& E_k + E_p\\
+	E_{tot} =& \frac{1}{2}m\dot{x}^2 + \frac{1}{2}kx^2\\
+	\frac{2E_{tot}}{mk} =& \frac{\dot{x}^2}{k} + \frac{x^2}{m},\\
+	Hvis\ vi\ setter\ C =& \frac{2E_{tot}}{mk}\\
+	\Rightarrow \frac{x^2}{m} + \frac{\dot{x}^2}{k} =& C
+\end{align*}
+
+
 Kan man bruke forskjellige initialbetingelser for å generere en bane som ikke er eliptisk, bruk totalenergien for å begrunne.
 \\
 \\
@@ -68,9 +94,7 @@ Beverger plotet seg med eller mot klokka? Plott litt mindre enn en runde og se. 
 Se plot for plot, kode for kode.
 \\
 \\
-\begin{figure}[H]
-\includegraphics[scale=0.8]{Oppgave1.png}
-\end{figure}
+
 
 
 Energien for en fjerpendel
@@ -102,7 +126,7 @@ En attraktor er et set med numeriske verdier som et dynamisk system har en tende
 
 
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale=0.8]{Oppgave2.png}
 \end{figure}
 
@@ -129,22 +153,72 @@ Hvis vi har $\lambda$ på formen $\lambda_{\pm} = \mu \pm i\eta$, så får vi de
 \begin{align*}
 	\lambda =& \pm i \sqrt{\frac{k}{m}}\\
 	x_h =& e^{\mu t}(A cos(\eta t) + B sin(\eta t))\\
-	x_h =& e^{0t}(A cos(\sqrt{\frac{k}{m}}t) +B sin(\sqrt{\frac{k}{m}}t))\\
-	x_h =& \underline{A cos(\sqrt{\frac{k}{m}}t) +B sin(\sqrt{\frac{k}{m}}t)}\\
+	x_h =& e^{0t} \left(A cos \left(\sqrt{\frac{k}{m}}t\right) +B sin \left(\sqrt{\frac{k}{m}}t \right) \right)\\
+	x_h =& \underline{A cos \left(\sqrt{\frac{k}{m}}t \right) +B sin \left(\sqrt{\frac{k}{m}}t \right)}\\
 \end{align*}
 
 Så den generelle løsningen for den homogene delen er
 
 \begin{equation}
-	x_h = A cos(\sqrt{\frac{k}{m}}t) +B sin(\sqrt{\frac{k}{m}}t)
+	x_h = A cos \left(\sqrt{\frac{k}{m}}t \right) +B sin \left(\sqrt{\frac{k}{m}}t \right)
 \end{equation}
 
 
 Nå skal vi bruke metoden for ubestemte koeffisienter for å finne den partikulære løsningen. Siden høyre side av likningen er på formen $A cos(pt)$, så kan vi bruke $x_p$ på formen $C e^{ipt}$
 
 \begin{align*}
-	x_p =& C e^{ipt},\   \   \ p=\omega_D, fra\ \ likningen
+	x_p =& C e^{ipt},\   \   \ p=\omega_D, fra\ \ likningen\\
+	x_p =& C e^{i\omega_Dt}\\
+	\dot{x_p} =& iC\omega_D e^{i\omega_Dt}\\
+	\ddot{x_p} =& -C\omega_D^2 e^{i\omega_Dt}\\
 \end{align*}
+
+Dette setter vi inn i difflikningen og løser for C
+
+\begin{align*}
+	m\ddot{x} + kx = F_D cos(\omega_Dt)\\
+	m\left(-C\omega_D^2e^{i\omega_Dt} \right) + k Ce^{i\omega_Dt} =& F_Dcos(\omega_Dt)\\
+	-mC\omega_D^2e^{i\omega_Dt} + k Ce^{i\omega_Dt} =& F_Dcos(\omega_Dt)\\
+	Ce^{i\omega_Dt} \left(-m\omega_D^2 +k \right) =& F_Dcos(\omega_Dt)\\
+	C =& \frac{F_Dcos(\omega_Dt)}{e^{i\omega_Dt} \left(-m\omega_D^2 +k \right)}\\
+\end{align*}
+
+Så setter vi uttrykket for C inn i $x_p$ og får at
+
+\begin{equation}
+	x_p = \frac{F_Dcos(\omega_Dt)\\}{\left(k - m \omega_D^2 \right)}
+\end{equation}
+
+Så den fullstendige generelle løsningen er
+
+\begin{equation}
+	A cos \left(\sqrt{\frac{k}{m}}t \right) +B sin \left(\sqrt{\frac{k}{m}}t \right) + \frac{F_Dcos(\omega_Dt)\\}{\left(k - m \omega_D^2 \right)}
+\end{equation}
+
+Vi skulle løse den for $x(0)=2m$ og $\dot{x}(0)=0 m/s$, så da gjør vi det og får 
+
+\begin{align*}
+	A =& 2 - \frac{F_D}{k-m\omega_D^2}\\
+	B =& 0\\ 
+\end{align*}
+
+Dette setter vi inn i løsningen og får
+
+\begin{equation}
+	x(t) = 2 cos \left(\sqrt{\frac{k}{m}}t \right) + \frac{F_D}{k-m\omega_D^2} \left(cos(\omega_Dt)-cos \left(\sqrt{\frac{k}{m}}t \right) \right)
+\end{equation}
+
+Så bruker vi en trigonometrisk identitet funnet på side 42 i Rottmann, som ser slik ut
+
+\begin{equation}
+	cos \alpha - cos \beta = -2 sin\frac{\alpha + \beta}{2}sin\frac{\alpha -\beta}{2}
+\end{equation}
+
+og da får vi
+
+\begin{equation}
+	x(t) = 2 cos \left(\sqrt{\frac{k}{m}}t \right) - \frac{2F_D}{k-m\omega_D^2} \left(sin\frac{\left(\omega_D + \sqrt{\frac{k}{m}} \right)t}{2} sin\frac{\left(\omega_D - \sqrt{\frac{k}{m}} \right)t}{2} \right)
+\end{equation}
 
 Hvordan kan vi tolke en slik løsning?
 \\
@@ -157,7 +231,7 @@ Det nummeriske resultatet bør være det samme som det analytiske. Er bevegelsen
 \\
 Med ny $\omega_D$ er bevegelsen fortsatt periodisk. Begrunn svaret. Finn definisjon av periodisk bevegelse.
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale=0.8]{Oppgave4del1.png}
 \end{figure}
 
@@ -165,7 +239,7 @@ ting
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed massa urna. Fusce placerat, nulla id aliquam varius, nulla risus commodo metus, in fringilla velit massa eu odio. Aliquam vitae eros at orci volutpat pulvinar eu a sapien. Proin ullamcorper tincidunt orci vel vehicula. Vestibulum venenatis eget magna at pharetra. Aenean ut rutrum urna. Aliquam venenatis leo viverra, fermentum massa vel, maximus lectus. Pellentesque pulvinar sodales massa non venenatis. Praesent lobortis consequat erat ut semper. Nulla tincidunt ac enim sed imperdiet. Nulla maximus dui eget eros laoreet, vitae eleifend magna vulputate. Sed ut molestie neque. Sed sagittis sagittis metus. Fusce placerat enim ut augue ornare mattis.
 \\
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale=0.8]{Oppgave4del2.png}
 \end{figure}
 
@@ -180,7 +254,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed massa urna. F
 \\
 \\
 mer ting
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale=0.8]{Oppgave5del1.png}
 \end{figure}
 
@@ -190,7 +264,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed massa urna. F
 ting
 
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale=0.8]{Oppgave5del2.png}
 \end{figure}
 

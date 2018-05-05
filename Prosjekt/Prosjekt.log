@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.24)  5 MAY 2018 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.24)  5 MAY 2018 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,239 +516,242 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 53.
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--66
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
 <Oppgave1.png, id=1, 462.528pt x 346.896pt>
 File: Oppgave1.png Graphic file (type png)
  <use Oppgave1.png>
-Package pdftex.def Info: Oppgave1.png used on input line 72.
+Package pdftex.def Info: Oppgave1.png used on input line 66.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--92
 
  []
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 76--87
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--87
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--87
+Underfull \hbox (badness 10000) in paragraph at lines 100--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--87
+Underfull \hbox (badness 10000) in paragraph at lines 100--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--87
+Underfull \hbox (badness 10000) in paragraph at lines 100--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--87
+Underfull \hbox (badness 10000) in paragraph at lines 100--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--102
+Underfull \hbox (badness 10000) in paragraph at lines 100--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--102
+Underfull \hbox (badness 10000) in paragraph at lines 100--111
+
+ []
+
+[2 <./Oppgave1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--102
+Underfull \hbox (badness 10000) in paragraph at lines 116--126
 
  []
 
-[2 <./Oppgave1.png>] <Oppgave2.png, id=14, 462.528pt x 346.896pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--126
+
+ []
+
+<Oppgave2.png, id=17, 462.528pt x 346.896pt>
 File: Oppgave2.png Graphic file (type png)
-
-<use Oppgave2.png>
-Package pdftex.def Info: Oppgave2.png used on input line 106.
+ <use Oppgave2.png>
+Package pdftex.def Info: Oppgave2.png used on input line 130.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
 
-[3 <./Oppgave2.png>]
-Overfull \hbox (4.58893pt too wide) in paragraph at lines 119--120
+
+Overfull \hbox (4.58893pt too wide) in paragraph at lines 143--144
 []\T1/ppl/m/n/12 Begynner med å finne den generelle løs-nin-gen for den ho-mo-g
 ene liknin-
  []
 
-
-Overfull \hbox (8.98375pt too wide) in paragraph at lines 143--144
+[3] [4 <./Oppgave2.png>]
+Overfull \hbox (8.98375pt too wide) in paragraph at lines 167--168
 \T1/ppl/m/n/12 par-tikulære løs-nin-gen. Siden høyre side av liknin-gen er på f
 or-men $\OML/zplm/m/it/12 Acos\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 pt\OT1/zplm/m
 /n/12 )$\T1/ppl/m/n/12 ,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 223--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--159
+Underfull \hbox (badness 10000) in paragraph at lines 223--226
 
  []
 
-[4] <Oppgave4del1.png, id=27, 462.528pt x 346.896pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+
+ []
+
+[6] <Oppgave4del1.png, id=33, 462.528pt x 346.896pt>
 File: Oppgave4del1.png Graphic file (type png)
  <use Oppgave4del1.png>
-Package pdftex.def Info: Oppgave4del1.png used on input line 161.
+Package pdftex.def Info: Oppgave4del1.png used on input line 235.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 238--241
 
  []
 
-<Oppgave4del2.png, id=28, 462.528pt x 346.896pt>
+<Oppgave4del2.png, id=34, 462.528pt x 346.896pt>
 File: Oppgave4del2.png Graphic file (type png)
  <use Oppgave4del2.png>
-Package pdftex.def Info: Oppgave4del2.png used on input line 169.
+Package pdftex.def Info: Oppgave4del2.png used on input line 243.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
-[5 <./Oppgave4del1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 173--175
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
-<Oppgave5del1.png, id=33, 462.528pt x 346.896pt>
+[7 <./Oppgave4del1.png>] <Oppgave5del1.png, id=40, 462.528pt x 346.896pt>
 File: Oppgave5del1.png Graphic file (type png)
- <use Oppgave5del1.png>
-Package pdftex.def Info: Oppgave5del1.png used on input line 184.
+
+<use Oppgave5del1.png>
+Package pdftex.def Info: Oppgave5del1.png used on input line 258.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--185
+Underfull \hbox (badness 10000) in paragraph at lines 253--260
 
  []
 
-[6 <./Oppgave4del2.png>] <Oppgave5del2.png, id=38, 462.528pt x 346.896pt>
+[8 <./Oppgave4del2.png>] <Oppgave5del2.png, id=45, 462.528pt x 346.896pt>
 File: Oppgave5del2.png Graphic file (type png)
 
 <use Oppgave5del2.png>
-Package pdftex.def Info: Oppgave5del2.png used on input line 194.
+Package pdftex.def Info: Oppgave5del2.png used on input line 268.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
- [7 <./Oppgave5del1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 197--200
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--200
+Underfull \hbox (badness 10000) in paragraph at lines 271--274
+
+ []
+
+[9 <./Oppgave5del1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--206
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
+
+ []
+
+[10 <./Oppgave5del2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--206
-
- []
-
-[8 <./Oppgave5del2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 209--212
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--212
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--218
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--218
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--224
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--224
-
- []
-
-[9]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 228.
+[11]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 302.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) (./RK4.py
-[10]) (./oppgave1.py [11]) (./oppgave2.py [12]) (./oppgave4.py [13] [14])
-(./oppgave5.py [15] [16]) (./oppgave6.py [17]) [18] (./Prosjekt.aux) ) 
+[12]) (./oppgave1.py [13]) (./oppgave2.py [14]) (./oppgave4.py [15] [16])
+(./oppgave5.py [17] [18]) (./oppgave6.py [19]) [20] (./Prosjekt.aux) ) 
 Here is how much of TeX's memory you used:
- 5173 strings out of 493089
- 66375 string characters out of 6134842
- 328480 words of memory out of 5000000
- 8533 multiletter control sequences out of 15000+600000
- 31544 words of font info for 75 fonts, out of 8000000 for 9000
+ 5177 strings out of 493089
+ 66408 string characters out of 6134842
+ 327480 words of memory out of 5000000
+ 8534 multiletter control sequences out of 15000+600000
+ 31898 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,40p,864b,1767s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,40p,855b,1767s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/loc
 al/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local
 /texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/t
@@ -760,10 +763,10 @@ t/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on Prosjekt.pdf (18 pages, 462781 bytes).
+Output written on Prosjekt.pdf (20 pages, 468985 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
