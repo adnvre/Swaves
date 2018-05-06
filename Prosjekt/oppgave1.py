@@ -11,7 +11,7 @@ m = 0.500		#mass of 500 g [kg]
 k = 1. 			#stiffness constant [N/m]
 x0 = 1. 			#start position [m]
 v0 = 0. 			#start velocity [m/s]
-T = 20. 			#total time [s]
+T = 20.0 			#total time [s]
 N = int(T/dt) 	
 
 #setting initialconditions

@@ -1,4 +1,3 @@
-
 \documentclass[norsk,a4paper,12pt]{article}
 \usepackage[T1]{fontenc} %for å bruke æøå
 \usepackage[utf8]{inputenc}
@@ -11,11 +10,13 @@
 \usepackage{float}
 \usepackage{amsmath}
 
-\definecolor{background}{gray}{0.95}
-\definecolor{comment}{rgb}{0,0.5,0}
-\colorlet{keyword}{blue}
-\colorlet{string}{red}
-\lstset{numbers=left,
+\setlength{\parindent}{0em}
+
+\definecolor{background}{gray}{0.9}
+\definecolor{comment}{rgb}{0.6,0.4,0.8}
+\definecolor{string}{rgb}{0.6,0.4,0.8}
+\definecolor{keyword}{rgb}{0.9,0.17,0.31}
+\lstset{
 	title=\lstname,
 	numberstyle=\tiny, 
 	breaklines=true,
@@ -41,9 +42,8 @@
 	}
 
 
-
 \title{Prosjektoppgave besvarelse}
-\author{15267}
+\author{Kadnidatnummer: 15267}
 \date{\today}
 \begin{document}
 
@@ -62,11 +62,11 @@ Ved å løse differensial likningen
 og plotte systemets bane i faserommet så får vi plottet i figur \ref{fig:plotoppg1}
 \\
 \begin{figure}[h]
-	\begin{center}
-	\includegraphics[scale=0.8]{Oppgave1.png}
-	\caption{Figuren viser faseplottet for en fri harmonisk oscillator}
-	\label{fig:plotoppg1}
-	\end{center}
+\begin{center}
+\includegraphics[scale=0.8]{Oppgave1.png}
+\caption{viser faseplottet for en fri harmonisk oscillator}
+\label{fig:plotoppg1}
+\end{center}
 \end{figure}
 
 Hvis vi varier initialverdiene for posisjonen og hastigheten, så vil det fortsatt være en ellipse. Hvis vi ser på totalenergien til systemet så ser vi hvorfor dette stemmer. Totalenergien er 
@@ -76,59 +76,43 @@ Hvis vi varier initialverdiene for posisjonen og hastigheten, så vil det fortsa
 	E_{tot} =& \frac{1}{2}m\dot{x}^2 + \frac{1}{2}kx^2\\
 	\frac{2E_{tot}}{mk} =& \frac{\dot{x}^2}{k} + \frac{x^2}{m},\\
 	Hvis\ vi\ setter\ C =& \frac{2E_{tot}}{mk}\\
-	\Rightarrow \frac{x^2}{m} + \frac{\dot{x}^2}{k} =& C
+	\Rightarrow \frac{x^2}{m} + \frac{\dot{x}^2}{k} =& C \\
+	\frac{x^2}{mC} + \frac{\dot{x}^2}{kC} =& C \\
+	\frac{x^2}{\sqrt{mC}^2} + \frac{\dot{x}^2}{\sqrt{kC}^2} =& 1 \\
 \end{align*}
 
-
-Kan man bruke forskjellige initialbetingelser for å generere en bane som ikke er eliptisk, bruk totalenergien for å begrunne.
+Det er formelen for en ellipse.
 \\
 \\
-Hvorfor står banen i faserommet vinkelrett på x og y aksen?
+Der hvor banen krysser x aksen og y aksen så er den vinkelrett på den aksen den krysser. Dette skyldes at i de punktene så er totalenergien lokalisert i bare det ene uttrykket, og det andre er null. Ved $|x| = max$ så endrer bevegelsen retning og $E_{tot} = E_p$. Når $x=0$ så er $E_{tot}=E_k$
 \\
 \\
-Beverger plotet seg med eller mot klokka? Plott litt mindre enn en runde og se. Kan den gå motsatt retning?
+Hvis vi plotter en kortere tidsperiode slik at kurven ikke når til startposisjonen så ser vi at den beveger seg med klokken. Selv om vi varierer startposisjon og starthastighet så er det ikke mulig å få banen til å gå i motsatt retning på grunn av hvordan vi har satt positive retninger og hva vi har satt på x og y aksen.
 \\
-\\
-
-
-Se plot for plot, kode for kode.
-\\
-\\
-
-
-
-Energien for en fjerpendel
-\\
-\\
-Totalenergien viser et eller annet, FINN UT AV HVA TOTALENERGIEN ER. Siden det ikke er noen form for friksjon så vil energien bare veksle mellom potensiell og kinetisk. + mer forklaring
-\\
-\\
-\\
-\\
-\\
-\\
-Systemet i faserommet beveger sem med klokka. Det går ikke ann å bruke en kombinasjon av initialverdier til å få den til å gå motsatt retning, fordi det avhenger av hvordan vi har satt positiv retning.  SIKKERT IKKE HELT RIKTIG ELLER KOMPLETT, SÅ DISKUTER LITT OG SKRIV BEDRE
 
 
 
 
 \section*{Oppgave 2}
-Diskuter banen i faserommet.
+Hvis vi inkluderer dempning i programmet så vil banen i faseplottet gå gradvis mot punktet $x = 0m$ og $\dot{x} = 0 m/s$ som en spiral.
 \\
 \\
-Står banen fortsatt loddrett på begge aksene. Nei, men står den vinkelrett, det kan du finne ut av.
-\\
-\\
-Hva er en attraktor?
-\\
-\\
-En attraktor er et set med numeriske verdier som et dynamisk system har en tendens til å utvikle seg mot for et bredt utvalg av initialbetingelser. En attraktor kan være et punkt(1 dim), et set met punkter(Jeg syntes 1 dim også), en kurve(2 dim), og flere ting innenfor matematikk. Punktet $x=0m$ og $\dot{x}=0m/s$ er en attraktor av dimensjon 1, fordi det er et singulært punkt. Kurven i oppgave 1 er også en attraktor i følge definisjonen tror jeg, siden systemet alltid havner i den kurven uansett initialbetingelser. På den andre siden så kan det argumenteres for at det ikke er en attraktor fordi systemet faktisk ikke kan gjøre noe annet, og dermed ikke kan ha en tendens til å ende langs kurven. Altså siden den ikke begynner utenfor kurven og så går inn og blir der så er det ikke en attraktor. FINN UT AV DET.
-
-
-
-\begin{figure}
+\begin{figure}[h]
+\begin{center}
 \includegraphics[scale=0.8]{Oppgave2.png}
+\caption{}
+\label{fig:faseplot2}
+\end{center}
 \end{figure}
+\\
+\\
+Banen står vinkelrett bare når den krysser x aksen, ikk y aksen. Dette er på grunn av dempings leddet som vi satt inn. 
+\\
+\\
+En attraktor er et set med numeriske verdier som et dynamisk system har en tendens til å utvikle seg mot for et bredt utvalg av initialbetingelser. En attraktor kan være et punkt(0 dim), et set met punkter, en kurve(2 dim), og flere ting innenfor matematikk. Punktet $x=0m$ og $\dot{x}=0m/s$ er en attraktor av dimensjon 0, fordi det er et singulært punkt. Kurven i oppgave 1 er også en attraktor i følge definisjonen tror jeg, siden systemet alltid havner i den kurven uansett initialbetingelser. På den andre siden så kan det argumenteres for at det ikke er en attraktor fordi systemet faktisk ikke kan gjøre noe annet, og dermed ikke kan ha en tendens til å ende langs kurven. Altså siden den ikke begynner utenfor kurven og så går inn og blir der så er det ikke en attraktor. FINN UT AV DET.
+
+
+
 
 
 \section*{Oppgave 3}
@@ -138,6 +122,7 @@ Vi skal løse følgende likning alanytisk.
 \\
 \begin{equation}
 	m \ddot{x}(t) +kx(t) = F_D cos(\omega_Dt)
+	\label{eq:diffpatrykt}
 \end{equation}
 
 Begynner med å finne den generelle løsningen for den homogene likningen, og løser derfor den karakteristiske likningen $m\lambda^2 + k = 0$
@@ -225,37 +210,49 @@ Hvordan kan vi tolke en slik løsning?
 \\
 
 \section*{Oppgave 4}
+Ved å løse likning \ref{eq:diffpatrykt} nummerisk og plotte den nummeriske løsningen minus den analytiske så får vi.
 
-Det nummeriske resultatet bør være det samme som det analytiske. Er bevegelsen periodisk?
-\\
-\\
-Med ny $\omega_D$ er bevegelsen fortsatt periodisk. Begrunn svaret. Finn definisjon av periodisk bevegelse.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.8]{Oppgave4_differanse.png}
+\caption{viser differansen mellom den nummeriske og analytiske løsningen}
+\label{fig:differanseplot}
+\end{center}
+\end{figure}
 
-\begin{figure}
+Så det nummeriske resultatet er ganske likt det analytiske. Plotter vi bevegelsen i faserommet får vi figur \ref{fig:faseplot4del1}
+
+\begin{figure}[h]
+\begin{center}
 \includegraphics[scale=0.8]{Oppgave4del1.png}
+\caption{Viser faseplottet med påtrykt kraft og $\omega_D = \frac{13}{8\omega_0}$}
+\label{fig:faseplot4del1}
+\end{center}
 \end{figure}
+Bevegelsen i figur \ref{fig:faseplot4del1} er periodisk. Hvis vi bytter ut drivefrekvensen med $\omega_D = \frac{2}{\left(\sqrt{5}-1 \right)\omega_0}$ så får vi 
 
-ting
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed massa urna. Fusce placerat, nulla id aliquam varius, nulla risus commodo metus, in fringilla velit massa eu odio. Aliquam vitae eros at orci volutpat pulvinar eu a sapien. Proin ullamcorper tincidunt orci vel vehicula. Vestibulum venenatis eget magna at pharetra. Aenean ut rutrum urna. Aliquam venenatis leo viverra, fermentum massa vel, maximus lectus. Pellentesque pulvinar sodales massa non venenatis. Praesent lobortis consequat erat ut semper. Nulla tincidunt ac enim sed imperdiet. Nulla maximus dui eget eros laoreet, vitae eleifend magna vulputate. Sed ut molestie neque. Sed sagittis sagittis metus. Fusce placerat enim ut augue ornare mattis.
-\\
 
-\begin{figure}
+\begin{figure}[h]
+\begin{center}
 \includegraphics[scale=0.8]{Oppgave4del2.png}
+\caption{Viser faseplottet med påtrykt kraft og $\omega_D = \frac{2}{\left(\sqrt{5}-1 \right)\omega_0}$}
+\label{fig:faseplot4del2}
+\end{center}
 \end{figure}
 
+Bevegelsen i figur \ref{fig:faseplot4del2} også en pariodisk bevegelse.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed massa urna. Fusce placerat, nulla id aliquam varius, nulla risus commodo metus, in fringilla velit massa eu odio. Aliquam vitae eros at orci volutpat pulvinar eu a sapien. Proin ullamcorper tincidunt orci vel vehicula. Vestibulum venenatis eget magna at pharetra. Aenean ut rutrum urna. Aliquam venenatis leo viverra, fermentum massa vel, maximus lectus. Pellentesque pulvinar sodales massa non venenatis. Praesent lobortis consequat erat ut semper. Nulla tincidunt ac enim sed imperdiet. Nulla maximus dui eget eros laoreet, vitae eleifend magna vulputate. Sed ut molestie neque. Sed sagittis sagittis metus. Fusce placerat enim ut augue ornare mattis.
-\\
 
 
 \section*{Oppgave 5}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed massa urna. Fusce placerat, nulla id aliquam varius, nulla risus commodo metus, in fringilla velit massa eu odio. Aliquam vitae eros at orci volutpat pulvinar eu a sapien. Proin ullamcorper tincidunt orci vel vehicula. Vestibulum venenatis eget magna at pharetra. Aenean ut rutrum urna. Aliquam venenatis leo viverra, fermentum massa vel, maximus lectus. Pellentesque pulvinar sodales massa non venenatis. Praesent lobortis consequat erat ut semper. Nulla tincidunt ac enim sed imperdiet. Nulla maximus dui eget eros laoreet, vitae eleifend magna vulputate. Sed ut molestie neque. Sed sagittis sagittis metus. Fusce placerat enim ut augue ornare mattis.
-\\
-\\
 mer ting
-\begin{figure}
+\begin{figure}[h]
+\begin{center}
 \includegraphics[scale=0.8]{Oppgave5del1.png}
+\caption{noe}
+\label{fig:faseplot5del1.png}
+\end{center}
 \end{figure}
 
 
@@ -264,13 +261,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed massa urna. F
 ting
 
 
-\begin{figure}
+\begin{figure}[h]
+\begin{center}
 \includegraphics[scale=0.8]{Oppgave5del2.png}
+\caption{noe}
+\label{fig:faseplot5del2.png}
+\end{center}
 \end{figure}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed massa urna. Fusce placerat, nulla id aliquam varius, nulla risus commodo metus, in fringilla velit massa eu odio. Aliquam vitae eros at orci volutpat pulvinar eu a sapien. Proin ullamcorper tincidunt orci vel vehicula. Vestibulum venenatis eget magna at pharetra. Aenean ut rutrum urna. Aliquam venenatis leo viverra, fermentum massa vel, maximus lectus. Pellentesque pulvinar sodales massa non venenatis. Praesent lobortis consequat erat ut semper. Nulla tincidunt ac enim sed imperdiet. Nulla maximus dui eget eros laoreet, vitae eleifend magna vulputate. Sed ut molestie neque. Sed sagittis sagittis metus. Fusce placerat enim ut augue ornare mattis.
-\\
-\\
+
 
 \section*{Oppgave 6}
 
