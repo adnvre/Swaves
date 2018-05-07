@@ -61,7 +61,7 @@ Ved å løse differensial likningen
 
 og plotte systemets bane i faserommet så får vi plottet i figur \ref{fig:plotoppg1}
 \\
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{Oppgave1fase.png}
 \caption{viser faseplottet for en fri harmonisk oscillator}
@@ -97,15 +97,14 @@ Hvis vi plotter en kortere tidsperiode slik at kurven ikke når til startposisjo
 Hvis vi inkluderer dempning i programmet så vil banen i faseplottet gå gradvis mot punktet $x = 0m$ og $\dot{x} = 0 m/s$ som en spiral.
 \\
 \\
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{Oppgave2fase.png}
 \caption{viser faseplott for svingning med dempning}
 \label{fig:faseplot2}
 \end{center}
 \end{figure}
-\\
-\\
+
 Banen står vinkelrett bare når den krysser x aksen, ikke y aksen. Dette er på grunn av dempings leddet som vi satt inn. 
 \\
 \\
@@ -205,14 +204,14 @@ og da får vi
 	x(t) = 2 cos \left(\sqrt{\frac{k}{m}}t \right) - \frac{2F_D}{k-m\omega_D^2} \left(sin\frac{\left(\omega_D + \sqrt{\frac{k}{m}} \right)t}{2} sin\frac{\left(\omega_D - \sqrt{\frac{k}{m}} \right)t}{2} \right)
 \end{equation}
 
-noe
+Siden uttrykket består av cosinus og sinus så vet vi at den er periodisk på et eller annet vis.
 \\
 \\
 
 \section*{Oppgave 4}
 Ved å løse likning \ref{eq:diffpatrykt} nummerisk og plotte den nummeriske løsningen minus den analytiske så får vi.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{Oppgave4_differanse.png}
 \caption{viser differansen mellom den nummeriske og analytiske løsningen}
@@ -222,7 +221,7 @@ Ved å løse likning \ref{eq:diffpatrykt} nummerisk og plotte den nummeriske lø
 
 Så det nummeriske resultatet er ganske likt det analytiske. Plotter vi bevegelsen i faserommet får vi figur \ref{fig:faseplot4del1}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{Oppgave4fasedel1.png}
 \caption{viser faseplottet med påtrykt kraft og $\omega_D = \frac{13}{8}\omega_0$}
@@ -232,7 +231,7 @@ Så det nummeriske resultatet er ganske likt det analytiske. Plotter vi bevegels
 Bevegelsen i figur \ref{fig:faseplot4del1} er periodisk. Hvis vi bytter ut drivefrekvensen med $\omega_D = \frac{2}{\left(\sqrt{5}-1 \right)}\omega_0$ så får vi 
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{Oppgave4fasedel2.png}
 \caption{viser faseplottet med påtrykt kraft og $\omega_D = \frac{2}{\left(\sqrt{5}-1 \right)}\omega_0$}
@@ -247,7 +246,7 @@ Bevegelsen i figur \ref{fig:faseplot4del2} også en pariodisk bevegelse.
 \section*{Oppgave 5}
 
 mer ting
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{Oppgave5fase1.png}
 \caption{viser faseplottet med påtrykt kraft, dempning og $\omega_D = \frac{13}{8}\omega_0$}
@@ -257,10 +256,8 @@ mer ting
 
 
 
-ting
 
-
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{Oppgave5fase2.png}
 \caption{viser faseplottet med påtrykt kraft, dempning og $\omega_D = \frac{2}{\left(\sqrt{5}-1 \right)}\omega_0$}
@@ -268,20 +265,56 @@ ting
 \end{center}
 \end{figure}
 
-
+Vi ser helt klart at banene i figur \ref{fig:faseplot5del1} og  \ref{fig:faseplot5del2} begynner likt som dere tilsvarende fra oppgave 4 og 2 men at de blir kaotiske fort og ender i en attraktor.
 
 \section*{Oppgave 6}
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{Oppgave6utslag.png}
+%\caption{viser faseplottet med påtrykt kraft, dempning og $\omega_D = \frac{2}{\left(\sqrt{5}-1 \right)}\omega_0$}
+\label{fig:faseplot5del2.png}
+\end{center}
+\end{figure}
+
+Posisjonen de første 3 sekundene øker gradvis. det ser realistisk ut fø dråpen faller.
+
 
 \section*{Oppgave 7}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{Oppgave7utslag.png}
+%\caption{viser faseplottet med påtrykt kraft, dempning og $\omega_D = \frac{2}{\left(\sqrt{5}-1 \right)}\omega_0$}
+\label{fig:faseplot5del2.png}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{Oppgave7faseplott.png}
+%\caption{viser faseplottet med påtrykt kraft, dempning og $\omega_D = \frac{2}{\left(\sqrt{5}-1 \right)}\omega_0$}
+\label{fig:faseplot5del2.png}
+\end{center}
+\end{figure}
+
+Tiden mellom dråpene er konstant.
 
 
 \section*{Oppgave 8}
 
 
+Det blir et kjent form på plottet.
+
+
 \section*{Oppgave 9}
 
+Det jeg har fått likner på noe som ble funnet i andre artikler
+
+
 \newpage
+
 
 \section*{Appendix}
 
