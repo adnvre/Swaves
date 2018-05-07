@@ -14,10 +14,10 @@ x0 = 2. 			#start position [m]
 v0 = 0. 			#start velocity [m/s]
 T = 200. 			#total time [s]
 N = int(T/dt) 		#number of things
-omega0 = k/m 		#Svingefrekvens for HO
+omega0 = np.sqrt(k/m) 		#Svingefrekvens for HO
 F_D = 0.7 			#[N]
-omega_D = 13./(8*omega0)
-#omega_D = 2./((np.sqrt(5)-1)*omega0)
+#omega_D = (13./8)*omega0
+omega_D = (2./((np.sqrt(5)-1)))*omega0
 
 
 #setting initialconditions
@@ -56,25 +56,28 @@ def anal_x_solution(t):
 #plotting
 
 #plotting the motion in x against time
+plt.figure(figsize=(8,5))
 plt.plot(t,x, '#803CA2', linewidth=2.0)
-plt.title('Plot av utslag', fontsize=20)
+plt.title('Plot av utslag $\omega_D = (2/(\sqrt{5}-1))\omega_0$', fontsize=20)
 plt.xlabel("Time [s]", fontsize=14)
 plt.ylabel("Motion in x [m]", fontsize=14)
 plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
+#plt.savefig('oppgave4utslagdel2.png')
 plt.show()
 
 #plotting the phaseplot
+plt.figure(figsize=(8,5))
 plt.plot(x,v, '#803CA2', linewidth=2.0)
-plt.title('Plot i faserommet, $\omega_D = 13/(8\omega_0)$', fontsize=20)
+plt.title('Plot i faserommet, $\omega_D = (2/(\sqrt{5}-1))\omega_0$', fontsize=20)
 plt.xlabel("Motion in x [m]", fontsize=14)
 plt.ylabel("Velocity [m/s]", fontsize=14)
 plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
-#plt.savefig('Oppgave4del1.png')
+#plt.savefig('Oppgave4fasedel2.png')
 plt.show()
 
 
 #plotting the difference between the numerical and analytical result
-
+plt.figure(figsize=(8,5))
 plt.plot(t, x-anal_x_solution(t), '#803CA2', linewidth=2.0)
 plt.xlabel('t [s]', fontsize=14)
 plt.ylabel('Differanse utslag [m]',fontsize=14)

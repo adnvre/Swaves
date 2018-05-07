@@ -14,11 +14,10 @@ v0 = 0. 			#start velocity [m/s]
 T = 100. 			#total time [s]
 N = int(T/dt) 		#number of things
 b = 0.1 			#[kg/s]
-omega0 = k/m 		#Svingefrekvens for HO
+omega0 = np.sqrt(k/m) 		#Svingefrekvens for HO
 F_D = 0.7 			#[N]
-omega_D = 13./(8*omega0)
-#omega_D = 2./((np.sqrt(5)-1)*omega0)
-
+#omega_D = (13./8)*omega0
+omega_D = (2./((np.sqrt(5)-1)))*omega0
 
 #setting initialconditions
 x = np.zeros(N); v = np.zeros(N); t = np.zeros(N)
@@ -50,20 +49,23 @@ for i in range(N-1):
 #plotting
 
 #plotting the motion in x against time
+plt.figure(figsize=(8,5))
 plt.plot(t,x, '#803CA2', linewidth=2.0)
-plt.title('Plot av utslag', fontsize=20)
+plt.title('Plot av utslag, $\omega_D = (2/(\sqrt{5}-1))\omega_0$', fontsize=20)
 plt.xlabel("Time [s]", fontsize=14)
 plt.ylabel("Motion in x [m]", fontsize=14)
 plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
+#plt.savefig('Oppgave5utslag2.png')
 plt.show()
 
 #plotting the phaseplot
+plt.figure(figsize=(8,5))
 plt.plot(x,v, '#803CA2', linewidth=2.0)
-plt.title('Plot i faserommet, $\omega_D = 13/(8\omega_0)$', fontsize=20)
+plt.title('Plot i faserommet, $\omega_D = (2/(\sqrt{5}-1))\omega_0$', fontsize=20)
 plt.xlabel("Motion in x [m]", fontsize=14)
 plt.ylabel("Velocity [m/s]", fontsize=14)
 plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
-#plt.savefig('Oppgave5del1.png')
+#plt.savefig('Oppgave5fase2.png')
 plt.show()
 
 

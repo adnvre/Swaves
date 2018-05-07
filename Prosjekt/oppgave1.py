@@ -39,21 +39,25 @@ for i in range(N-1):
 
 #plotting 
 
-"""
+
 #plotting the motion in x against time
-plt.plot(t,x)
-plt.xlabel("time")
-plt.ylabel("motion")
+plt.figure(figsize=(8,5))
+plt.plot(t,x, '#803CA2', linewidth=2.0)
+plt.title('Plot av utslag', fontsize=20)
+plt.xlabel("Time [s]", fontsize=14)
+plt.ylabel("Motion in x [m]", fontsize=14)
+plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
+#plt.savefig('Oppgave1utslag.png')
 plt.show()
-"""
 
 #plotting the phaseplot
+plt.figure(figsize=(8,5))
 plt.plot(x,v, '#803CA2', linewidth=2.0)
 plt.title('Plot i faserommet', fontsize=20)
 plt.xlabel("Motion in x [m]", fontsize=14)
 plt.ylabel("Velocity [m/s]", fontsize=14)
 plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
-#plt.savefig('Oppgave1.png')
+#plt.savefig('Oppgave1fase.png')
 plt.show()
 
 
