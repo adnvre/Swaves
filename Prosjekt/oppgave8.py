@@ -53,6 +53,7 @@ for psi in psi_list:
 	psi_plot_list = [psi]*50
 	t_diff = []
 	#dpsi =(T*psi[j])/N
+	
 	for i in range(N-1):
 		x1 = x[i]; v1 =v[i]
 		oldmass = m[i]
@@ -60,6 +61,7 @@ for psi in psi_list:
 		A = (3*dm**4)
 		B = (4*np.pi*rho*oldmass**3)
 		dx =  (A/B)**(1./3) 
+
 		if x[i] > x_c:
 			t_c_old = t_c
 			t_c = t[i] 
@@ -68,6 +70,7 @@ for psi in psi_list:
 			#print ('dx =',dx)
 			
 			m[i+1] = oldmass - dm + psi*dt
+			
 			if m[i+1] <= 0:
 				print ("mass cannot be 0 or negative")
 				m[i+1]=0.00001
@@ -82,6 +85,7 @@ for psi in psi_list:
 		t[i+1] = t[i] + dt
 	t_diff_plot = t_diff[-50:]
 	plt.plot(psi_plot_list, t_diff_plot)
+plt.savefig("Oppgave8.png")
 plt.show()
 
 
