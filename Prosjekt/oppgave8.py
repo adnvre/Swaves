@@ -85,7 +85,7 @@ for psi in psi_list:
 		t[i+1] = t[i] + dt
 	t_diff_plot = t_diff[-50:]
 	plt.plot(psi_plot_list, t_diff_plot)
-plt.savefig("Oppgave8.png")
+#plt.savefig("Oppgave8.png")
 plt.show()
 
 
