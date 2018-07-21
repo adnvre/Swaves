@@ -1,4 +1,5 @@
 #imports
+import time
 import numpy as np
 import matplotlib.pyplot as plt
 from RK4 import RK4
@@ -29,8 +30,8 @@ x[0] = x0; v[0] = v0
 m = np.zeros(N)
 m[0] = m0
 
-
-
+runtime0 = time.clock()
+print("runtime0 =", runtime0)
 """
 the functions we have are 
 m(t)x''(t)+(b+psi)x'(t)+kx(t)=m(t)g
@@ -47,13 +48,21 @@ def diffEQ(xNow,vNow,tNow):
 
 t_c =0
 
+runtime1 = time.clock()
+print("runtime1 =", runtime1)
+
+#psiruntime = np.zeros(M)
+forlooptimer = np.zeros(N-1)
+
 #running the loop
 for psi in psi_list:
 	print(psi)
 	psi_plot_list = [psi]*50
 	t_diff = []
 	#dpsi =(T*psi[j])/N
-	
+	psiruntime = time.clock()
+	print("PSI loop = ", psiruntime)
+
 	for i in range(N-1):
 		x1 = x[i]; v1 =v[i]
 		oldmass = m[i]
@@ -70,7 +79,7 @@ for psi in psi_list:
 			#print ('dx =',dx)
 			
 			m[i+1] = oldmass - dm + psi*dt
-			
+ 			
 			if m[i+1] <= 0:
 				print ("mass cannot be 0 or negative")
 				m[i+1]=0.00001
@@ -83,6 +92,8 @@ for psi in psi_list:
 
 		x[i+1],v[i+1] = RK4(diffEQ,x1,v1,t,dt)
 		t[i+1] = t[i] + dt
+		forlooptimer[i] = time.clock()
+	print("For loop timer =", forlooptimer[::100])
 	t_diff_plot = t_diff[-50:]
 	plt.plot(psi_plot_list, t_diff_plot)
 #plt.savefig("Oppgave8.png")
@@ -113,4 +124,7 @@ plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
 #plt.savefig('Oppgave8faseplott_psi55.png')
 plt.show()
 """
+
+final_runtime = time.clock()
+print("Final runtime =", final_runtime)
 
